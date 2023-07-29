@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+	<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+    	<title>تسجيل الدخول</title>
+		
+    </head>
+
+    <body dir="rtl">
+
+    	<header class="hedear_class">
+    		<nav class="navbar">
+
+				<div class="mobile_header">
+				
+					<button  >
+						<img src="../images/menue.png" alt="menue" height="50px" width="50px" onfocus="showMenue();">
+					</button>
+					<ul class="menue_items">
+						<li><a href='home.html'>جميع المنتجات</a></li>
+						<li><a href='it/IT-Factualy.html'>كلية تكنولوجيا المعلومات</a></li>
+						<li><a href='engeneering/eng1.html'>كلية الهندسة</a></li>
+						<li><a href="Graduation-Regalia/grads.html">مستلزمات حفل التخرج</a></li>
+						<li><a href='signin.html'>تسجيل الاشتراك</a></li>
+						<li><a href='login.html'>تسجيل الدخول</a></li>
+					</ul>
+				</div>
+
+				<div class="classic_header">
+					
+					<h1>متجر جامعتي</h1>
+					<ul>
+						<li>
+							<a href="signin.html"><img src="../images/add-user.png" alt="تسجيل الدخول"></a>
+							</li>
+		
+							<li><a href="login.html"><img src="../images/login.png" alt="تسجيل الاشتراك" ></a></li>
+							
+					</ul>
+					
+					<ul>
+						<li><a href="home.html" style="background-color: #f2e125; color: #fff;"><span class="nav2-cat-names">جميع المنتجات</span></a></li>
+						<li><a href="it/IT-Factualy.html" ><span class="nav2-cat-names">كلية تكنولوجيا المعلومات</span></a></li>
+						<li><a href="engeneering/eng1.html"><span class="nav2-cat-names">كلية الهندسة</span></a></li>
+						<li><a href="Graduation-Regalia/grads.html"><span class="nav2-cat-names">مستلزمات حفل التخرج</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+
+        <h1 class="pageTitle">إنشاء حساب جديد</h2>
+		<div class="new_login">
+			<p style="width: 100%;">إذا كان لديك حساب معنا ، الرجاء الدخول إلى <a href="login.html">صفحة تسجيل الدخول</a></p>
+		
+
+			<form name="signin_form" action="" method="post" enctype="multipart/form-data" onsubmit="nameValidate()">
+					<legend>معلوماتك الشخصية</legend>
+					<div>
+						<label>الاسم الكامل</label>
+						<input type="text" name="name" id="input" placeholder="أدخل اسمك" onfocus="onFocusing(this)" onblur="onBluring(this)">
+					</div>
+
+					<div class="age_group">
+						<label>العمر</label>
+						<input type="number" name="age" value="" placeholder="أدخل عمرك" onfocus="onFocusing()" onblur="onBluring(this)">
+					</div>
+
+					<div class="email_group">
+						<label>تاريخ الميلاد</label>
+						<input type="date" name="DOB" value="age" onfocus="onFocusing()" onblur="onBluring(this)">
+					</div>
+				
+					<div class="email_group">
+						<label>البريد الالكتروني</label>
+						<input type="email" name="email" value="" placeholder="البريد الالكتروني" onfocus="onFocusing()" onblur="onBluring(this)">
+					</div>
+
+					<div class="email_group">
+						<label>رقم الهاتف أو الجوال</label>
+						<input type="tel" name="telephone" placeholder="رقم الهاتف أو الجوال" onfocus="onFocusing()"  onblur="onBluring(this)">
+					</div>
+
+					<div class="gender_group">
+						<span>الجنس</span>
+						<ul>
+							<li>
+								<input type="radio" name="gender" >ذكر
+							</li>
+							<li>
+								<input type="radio" name="gender">أنثى
+							</li>	
+						</ul>
+					</div>
+				</fieldset>
+
+				
+				<fieldset class="pass_group">
+					<legend>كلمة المرور الخاصة بك</legend>
+					<div>
+						<label>كلمة المرور</label>
+						<input type="password" name="pswd" placeholder="كلمة المرور" onfocus="onFocusing()" onblur="onBluring(this)">
+					</div>
+				
+					<div >
+						<label>تأكيد كلمة المرور</label>
+						<input type="password" name="pswd" value="" placeholder="تأكيد كلمة المرور" onfocus="onFocusing()" onblur="onBluring(this)">
+					</div>
+				</fieldset>
+
+				<fieldset class="intrests_group">
+					<legend>اهتماماتك وفقًا للخدمات أو المنتجات التي نقدمها</legend>
+					<div>
+						<label>اهتماماتك</label>
+						<textarea rows=5 cols=20 name="intrests" onfocus="onFocusing()" onblur="onBluring()">
+							أدخل اهتماماتك
+						</textarea>
+					</div>
+				</fieldset>
+
+				<button type="submit" class="butts" onclick="confirm('هل أنت متأكد من معلوماتك التي قمت بإدخالها!');">سجل اشتراكك</button>
+			</form>	
+			
+			
+  
+
+			<footer>
+				<div class="foot">
+					<span>جميع الحقوق محفوظة لمتجر جامعتي&copy;</span>
+				</div>
+
+				<div class="mobile_footer">
+					<div>" " </div>
+				</div>
+			</footer>
+		
+		<script src='../java/script.js'>
+
+
+		</script>	
+		</body>
+			
+	</html>

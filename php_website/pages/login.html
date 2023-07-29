@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+	<head>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+    	<title>تسجيل الدخول</title>
+    </head>
+    <body dir="rtl">
+
+
+	    <header class="hedear_class">
+			<nav class="navbar">
+
+				<div class="mobile_header">	
+					<a>
+						<img src="../images/menue.png" alt="menue" height="50px" width="50px" onclick='showMenue();'>
+					
+						<ul class="menue_items">
+							<li><a href='it/IT-Factualy.html'>كلية تكنولوجيا المعلومات</a></li>
+							<li><a href='engeneering/eng1.html'>كلية الهندسة</a></li>
+							<li><a href="Graduation-Regalia/grads.html">مستلزمات حفل التخرج</a></li>
+						</ul>
+					</a>
+				</div>
+			<div class="classic_header">
+					
+				<h1>متجر جامعتي</h1>
+				<ul>
+					<li>
+						<a href="signin.html"><img src="../images/add-user.png" alt="تسجيل الدخول"></a>
+						</li>
+	
+						<li><a href="login.html"><img src="../images/login.png" alt="تسجيل الاشتراك" ></a></li>
+						
+				</ul>
+				
+				<ul>
+					<li><a href="home.html" style="background-color: #f2e125; color: #fff;"><span class="nav2-cat-names">جميع المنتجات</span></a></li>
+					<li><a href="it/IT-Factualy.html" ><span class="nav2-cat-names">كلية تكنولوجيا المعلومات</span></a></li>
+					<li><a href="engeneering/eng1.html"><span class="nav2-cat-names">كلية الهندسة</span></a></li>
+					<li><a href="Graduation-Regalia/grads.html"><span class="nav2-cat-names">مستلزمات حفل التخرج</span></a></li>
+				</ul>
+			</div>
+	</header>
+
+        <h1 class="pageTitle">تسجيل الدخول إلى حسابك</h2>
+		<div class="new_login">
+			<h2 class="cat_name">تسجيل جديد </h2>
+			<p>لكي تقوم بإنهاء الطلب قم بإنشاء حساب جديد معنا، فهو يُمكنك من الشراء بصورة أسرع و متابعة طلبيات الشراء التي تقدمت بها, و مراجعة سجل الطلبيات القديمة واسعتراض الفواتير وغير ذلك الكثير...</p>
+			<a href="signin.html" class="cont_butt">متابعة</a>
+		</div>
+		<div class="your_account_login">
+			<h2 class="cat_name">تسجيل الدخول</h2>
+			<form action="home.html" method="post" enctype="multipart/form-data">
+				<div class="email_group">
+					<label>البريد الالكتروني</label>
+					<input type="email" name="email" value="" placeholder="البريد الالكتروني" onfocus="onFocusing(this)" onblur="onBluring(this)">
+				</div>
+				<div class="password_group">
+					<label>كلمة المرور</label>
+					<input type="password" name="pswd" placeholder="كلمة المرور" onfocus="onFocusing(this)" onblur="onBluring(this)">
+				</div>
+				<div class="checkBox">
+					<input type="checkbox" name="remmeber" checked>
+					<label>تذكرني</label>
+				</div>
+
+				<div class="pswd_forget">
+					<a href="signin.html" target="_blank">هل نسيت كلمة المرور؟</a>
+				</div>
+				
+				<a href="home.html" class="cont_butt" id="login">دخول</a>
+			</form>
+			
+		</div>
+
+		<footer>
+			<div class="foot">
+				<span>جميع الحقوق محفوظة لمتجر جامعتي&copy;</span>
+			</div>
+
+			<div class="mobile_footer">
+				<div>" " </div>
+			</div>
+		</footer>
+
+		<script src='../java/script.js'>
+		</script>
+    </body>	
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	    <title>متجر جامعتي</title>
+		<script type="text/javascript">
+		alert("مرحبا بك في متجر جامعتي");
+		</script>
+	</head>
+
+
+	<!-- <body dir="rtl" onload="getAttributes();" > -->
+
+		<header class="hedear_class">
+    		<nav class="navbar">
+				<div class="mobile_header">
+					<div>
+						<button  >
+							<img src="../images/menue.png" alt="menue" height="50px" width="50px" onclick="showMenue(this);">
+						</button>
+						<ul class="menue_items">
+							<li><a href='home.html'>جميع المنتجات</a></li>
+							<li><a href='it/IT-Factualy.html'>كلية تكنولوجيا المعلومات</a></li>
+							<li><a href='engeneering/eng1.html'>كلية الهندسة</a></li>
+							<li><a href="Graduation-Regalia/grads.html">مستلزمات حفل التخرج</a></li>
+							<li><a href='signin.html'>تسجيل الاشتراك</a></li>
+							<li><a href='login.html'>تسجيل الدخول</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="classic_header">
+					
+					<h1>متجر جامعتي</h1>
+					<ul>
+						<li>
+							<a href="signin.html"><img src="../images/add-user.png" alt="تسجيل الدخول"></a>
+							</li>
+		
+							<li><a href="login.html"><img src="../images/login.png" alt="تسجيل الاشتراك" ></a></li>		
+					</ul>
+					
+					<ul>
+						<li><a href="home.html" style="background-color: #f2e125; color: #fff;"><span class="nav2-cat-names">جميع المنتجات</span></a></li>
+						<li><a href="it/IT-Factualy.html" ><span class="nav2-cat-names">كلية تكنولوجيا المعلومات</span></a></li>
+						<li><a href="engeneering/eng1.html"><span class="nav2-cat-names">كلية الهندسة</span></a></li>
+						<li><a href="Graduation-Regalia/grads.html"><span class="nav2-cat-names">مستلزمات حفل التخرج</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		
+		<h1 class="pageTitle" onfocus="coloring();">كليات الجامعة</h1>
+		<div class="Products">
+			<div class="product" onmousemover="product()">
+				<a href="engeneering/eng1.html">
+					<img src="../images/eng640.jpg" alt="كلية الهندسة" >
+					<h2 class="cat_name">كلية الهندسة</h2>
+					<p class="desc">زي المهندسين, مساطر،أقلام رصاص</p>
+				</a>
+			</div>
+			<div class="product" onclick="product();">
+				<a href="it/IT-Factualy.html">
+					<img src="../images/it-640.jpg" alt="كلية تكنولوجيا المعلومات" class="Factualy_image" >
+					<h2 class="cat_name">كلية تكنولوجيا المعلومات</h2>
+					<p class="desc">ماوس طاولات اللاب توب,أجهزة اللاب توب ، حقائب اللاب توب</p>
+				</a>
+			</div>
+
+			<div class="product">
+				<a href="Graduation-Regalia/grads.html">
+					<img src="../images/gra-640.jpg" alt="حفلة التخرج" >
+					<h2 class="cat_name">مستلزمات حفلة التخرج</h2>
+					<p class="desc">قبعة التخرج , روب التخرج</p>
+				</a>
+			</div>
+		</div>
+		<footer>
+			<div class="foot">
+				<span>جميع الحقوق محفوظة لمتجر جامعتي&copy;</span>
+			</div>
+
+			<div class="mobile_footer">
+				<div>" " </div>
+			</div>
+		</footer>
+	</body>
+
+</html>
